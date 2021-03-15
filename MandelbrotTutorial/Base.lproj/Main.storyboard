@@ -1,7 +1,10 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14C81f" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BV1-FR-VrT">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BV1-FR-VrT">
+    <device id="ipad11_0rounded" orientation="portrait" layout="fullscreen" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--Game View Controller-->
@@ -13,38 +16,36 @@
                         <viewControllerLayoutGuide type="bottom" id="khH-OB-KpY"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="3se-qz-xqx" customClass="SKView">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="834" height="1194"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" maximumZoomScale="100000" translatesAutoresizingMaskIntoConstraints="NO" id="Hsk-Mi-ATd">
-                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <rect key="frame" x="0.0" y="0.0" width="834" height="1194"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="u8j-l8-kE2">
-                                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="600" id="mXD-iI-pGf"/>
-                                            <constraint firstAttribute="width" constant="600" id="xZi-3B-gQ4"/>
-                                        </constraints>
+                                        <rect key="frame" x="0.0" y="0.0" width="834" height="1194"/>
+                                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
                                     </view>
                                 </subviews>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="600" id="5gb-EP-zdr"/>
-                                    <constraint firstItem="u8j-l8-kE2" firstAttribute="top" secondItem="Hsk-Mi-ATd" secondAttribute="top" id="KjS-z0-RRz"/>
-                                    <constraint firstItem="u8j-l8-kE2" firstAttribute="leading" secondItem="Hsk-Mi-ATd" secondAttribute="leading" id="QZQ-u4-tuf"/>
-                                    <constraint firstAttribute="bottom" secondItem="u8j-l8-kE2" secondAttribute="bottom" id="hRm-VS-HrT"/>
-                                    <constraint firstAttribute="trailing" secondItem="u8j-l8-kE2" secondAttribute="trailing" id="lYt-SM-rsX"/>
-                                    <constraint firstAttribute="height" constant="600" id="pAf-UM-ddG"/>
+                                    <constraint firstItem="u8j-l8-kE2" firstAttribute="width" secondItem="Hsk-Mi-ATd" secondAttribute="width" id="F0J-0l-JRe"/>
+                                    <constraint firstItem="u8j-l8-kE2" firstAttribute="leading" secondItem="Hsk-Mi-ATd" secondAttribute="leading" id="aOF-X9-dgl"/>
+                                    <constraint firstAttribute="bottom" secondItem="u8j-l8-kE2" secondAttribute="bottom" id="cOf-l9-kf0"/>
+                                    <constraint firstAttribute="trailing" secondItem="u8j-l8-kE2" secondAttribute="trailing" id="j1r-FI-8h7"/>
+                                    <constraint firstItem="u8j-l8-kE2" firstAttribute="top" secondItem="Hsk-Mi-ATd" secondAttribute="top" id="jqv-Kh-nwN"/>
+                                    <constraint firstItem="u8j-l8-kE2" firstAttribute="height" secondItem="Hsk-Mi-ATd" secondAttribute="height" priority="250" id="qXs-ZI-0EJ"/>
                                 </constraints>
                                 <connections>
                                     <outlet property="delegate" destination="BV1-FR-VrT" id="Ayi-pS-nAZ"/>
                                 </connections>
                             </scrollView>
                         </subviews>
-                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="Hsk-Mi-ATd" firstAttribute="leading" secondItem="3se-qz-xqx" secondAttribute="leading" id="604-h6-9Zq"/>
-                            <constraint firstItem="Hsk-Mi-ATd" firstAttribute="bottom" secondItem="khH-OB-KpY" secondAttribute="top" id="Sdi-RC-ZgX"/>
+                            <constraint firstAttribute="trailing" secondItem="Hsk-Mi-ATd" secondAttribute="trailing" id="2ew-FU-CCw"/>
+                            <constraint firstItem="Hsk-Mi-ATd" firstAttribute="top" secondItem="3se-qz-xqx" secondAttribute="top" id="8Hb-UR-hnN"/>
+                            <constraint firstItem="Hsk-Mi-ATd" firstAttribute="leading" secondItem="3se-qz-xqx" secondAttribute="leading" id="New-WX-XxM"/>
+                            <constraint firstAttribute="bottom" secondItem="Hsk-Mi-ATd" secondAttribute="bottom" id="b3s-zx-bMb"/>
                         </constraints>
                     </view>
                     <connections>
@@ -54,6 +55,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SZV-WD-TEh" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="-16" y="-20"/>
         </scene>
     </scenes>
 </document>
